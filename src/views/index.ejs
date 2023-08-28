@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-</head>
-<body>
-    <h1>hello this is ejs</h1>
-</body>
+  </head>
+  <body>
+    <input type="text" value="input-1">
+    <button id="alert" type="button">Enviar cualquier cosa...</button>
+  </body>
+
+  <script>
+    const btn = document.querySelector("#alert");
+
+    btn.addEventListener("click", function () {
+      alert("funcionando..");
+    });
+  </script>
 </html>
