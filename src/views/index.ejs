@@ -6,17 +6,20 @@
     <title>index</title>
   </head>
   <body>
-    <input type="text" value="input-1">
+    <input type="text"  name="nombreUno" value="chdhghgdgh">
     <button id="alert" type="button">Enviar cualquier cosa...</button>
   </body>
 
   <script>
     const btn = document.querySelector("#alert");
-
+    let nombreUno = document.querySelector('[name="nombreUno"]').value;
+    
     btn.addEventListener("click", async function () {
-      const rta = await fetch("http://localhost:3000/insert_mysql");
-      const jsonData = await rta.json();
-      alert(jsonData.value);
+      console.log(nombreUno);
     });
+
+    /* const rta = await fetch("http://localhost:3000/insert_mysql");
+      const jsonData = await rta.json();
+      alert(jsonData.value);*/
   </script>
 </html>
