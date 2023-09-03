@@ -3,7 +3,7 @@ const { json } = require("sequelize");
 const { dataMySql, insertDataMySql } = require("../controllers/main.controller");
 
 router.get("/", async (req, res) => {
-  res.render("index");
+  res.send("index");
 });
 
 router.get("/mysql", async (req, res) => {
